@@ -36,8 +36,8 @@ def convert(fname, pages=None):
     return text
 l1 = []
 l2 = []
-for i in range(676,707):
-    m = convert('AI3.pdf', pages=[i])
+for i in range(626,627):
+    m = convert('AI4.pdf', pages=[i])
     m = m.split('\n\n')
     for mm in m:
         if len(mm)<7 or hasNumbers(mm)==False:
