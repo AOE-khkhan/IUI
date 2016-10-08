@@ -36,7 +36,7 @@ def convert(fname, pages=None):
     return text
 l1 = []
 l2 = []
-for i in range(619,635):
+for i in range(876,897):
     m = convert('CN3.pdf', pages=[i])
     m = m.split('\n\n')
     for mm in m:
