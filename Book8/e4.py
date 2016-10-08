@@ -34,7 +34,7 @@ for faf in range(len(l2)):
     if any(c.isalpha() for c in tex2) or len(tex2)>4 or tex2=='':
         continue
     print tex
-    m = convert('CN5.pdf', pages=[int(tex2)+3])
+    m = convert('CN5.pdf', pages=[int(tex2)+10])
 
     m = m.split('\n\n')
     f2 = open("xxCN5.txt",'a')
