@@ -35,11 +35,11 @@ for faf in range(len(l2)):
     if any(c.isalpha() for c in tex2) or len(tex2)>4 or tex2=='':
         continue
     print tex
-    m = convert('OS2.pdf', pages=[int(tex2)+20])
+    m = convert('OS3.pdf', pages=[int(tex2)+20])
 
     m = m.split('\n\n')
-    f2 = open("xxOS2.txt",'a')
-    f3 = open("yyOS2.txt",'a')
+    f2 = open("xxOS3.txt",'a')
+    f3 = open("yyOS3.txt",'a')
     for k in m:
         if len(k)>150:
             s = ""
