@@ -32,7 +32,7 @@ print len(l2)
 for faf in range(len(l2)):
     tex = l1[faf]
     tex2 = l2[faf]
-    if any(c.isalpha() for c in tex2) or len(tex2)>4 or tex2=='':
+    if any(c.isalpha() for c in tex2) or len(tex2)>4 or tex2=='' or faf<380:
         continue
     print tex
     m = convert('CN4.pdf', pages=[int(tex2)+36])

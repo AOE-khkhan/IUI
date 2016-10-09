@@ -36,8 +36,8 @@ def convert(fname, pages=None):
     return text
 l1 = []
 l2 = []
-for i in range(717,739):
-    m = convert('Algo4.pdf', pages=[i])
+for i in range(544,559):
+    m = convert('Algo5.pdf', pages=[i])
     m = m.split('\n\n')
     for mm in m:
         if len(mm)<7 or hasNumbers(mm)==False:
