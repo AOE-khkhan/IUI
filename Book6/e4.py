@@ -34,9 +34,11 @@ print len(l2)
 for faf in range(len(l2)):
     tex = l1[faf]
     tex2 = l2[faf]
-    if any(c.isalpha() for c in tex2) or len(tex2)>4 or tex2=='':
+    if any(c.isalpha() for c in tex2) or len(tex2)>4 or tex2=='' or faf<1302:
         continue
     print tex
+    if str(tex2)[-1:]=='.':
+        tex2 = str(tex2)[:-1]
     m = convert('AI1.pdf', pages=[int(tex2)+13])
 
     m = m.split('\n\n')
